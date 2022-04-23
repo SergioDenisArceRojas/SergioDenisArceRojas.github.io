@@ -1,0 +1,100 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema</title>
+    <style>
+        body{
+            background-image: url(https://image.freepik.com/photos-gratuite/femme-factures-calculatrice-femme-aide-calculatrice-pour-calculer-factures-table-au-bureau_1418-2412.jpg);
+            background-size: 100%;    
+            background-repeat: no-repeat;
+            font-family: montserrat;
+            background-position: center;
+        }
+        .box-1{
+            width: fit-content;
+            height:fit-content;
+            background-color: rgb(250, 250, 250,0);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .box-2{
+            background-color: rgb(220, 220, 220,0.8);
+            border-radius: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: solid;
+        }
+        .titulo/*, .contenido*/{
+            background-color: rgb(250, 250, 250,0);
+            font-size: 48px;
+            color: brown;
+        }
+        h1{
+            margin: 5px;
+        }
+        
+        label, input, button{
+            text-align: center;
+            font-size: 18px;
+        }
+        /*a partir de aqui solo pie de pagina*/
+        footer{
+            height: cover;
+            width: 100%;
+            position: absolute;
+            background-color: rgb(32, 41, 41);
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,-100%);
+            text-align: center;
+            font-size: 10px;
+            color: brown;
+        }
+        /* a partir de aqui solo encabezado*/
+        header{
+            height: cover;
+            width: 100%;
+            position: absolute;
+            background-color: rgb(32, 41, 41);
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Asociación Gremial de comerciantes <br> Abasto II</h1>
+    </header>
+    <div class="box-1">
+        <h1 class="titulo">
+            <!--Sistema de Control Abasto II-->
+            Iniciar Sesión
+        </h1>
+        <form class="box-2" action="http://www.google.com.bo/">
+            <label for="usuario">Usuario</label>
+            <br>
+            <input type="text" id="usuario" required>
+            <br>
+            <label for="password">Contraseña</label>
+            <br>
+            <input type="password" id="password"required>
+            <br>
+            <br>
+            <button type="submit">ingresar</button>
+        </form>
+    </div>
+    <footer>
+        <h1>
+            Soperte Tecnico: <a style="color: brown;"href="adonaisarce@gmail.com ">geometricalGLOBK@gmail.com</a>
+        </h1>  
+    </footer>
+</body>
+</html>
